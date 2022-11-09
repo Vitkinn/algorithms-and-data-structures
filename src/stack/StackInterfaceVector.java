@@ -1,12 +1,12 @@
 package stack;
 
-public class StackVector<T> implements Stack<T> {
+public class StackInterfaceVector<T> implements StackInterface<T> {
 
     private int counter = 0;
     private int size;
     private T[] array;
 
-    public StackVector(int size) {
+    public StackInterfaceVector(int size) {
         this.size = size;
         this.array = (T[]) new Object[size];
     }
